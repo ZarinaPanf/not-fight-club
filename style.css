@@ -18,7 +18,7 @@ body {
     align-items: center;
     padding: 20px 30px;
     width: 30em;
-    height: 15em;
+    height: 17em;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -27,6 +27,7 @@ body {
 .form-group {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 h1 {
@@ -36,6 +37,7 @@ h1 {
 
 .title {
     font-size: 1rem;
+    padding: 1 rem 0;
 }
 
 input {
