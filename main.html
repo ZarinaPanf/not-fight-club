@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./settings.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Main</title>
 </head>
@@ -13,9 +14,9 @@
           <span class="logo">Main</span>
         </div>
         <div class="navbar-right">
-          <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
-          <a href="#" title="Profile"><i class="fa-solid fa-user"></i></a>
-          <a href="#" title="Settings"><i class="fa-solid fa-gear"></i></a>
+          <a href="./index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+          <a href="./character.html" title="Profile"><i class="fa-solid fa-user"></i></a>
+          <a href="#" title="Settings"><i class="fa-solid fa-gear" id="openSettingsBtn"></i></a>
         </div>
       </header>
 
@@ -23,6 +24,27 @@
         <button id="startBtn">Start Game</button>
       </div>
 
-    <script src=""></script>
+      <div id="settingsModal" class="modal">
+        <div class="settings-modal-content">
+          <div class="modal-header">
+            <h2>Settings</h2>
+            <span id="closeSettings" class="close-modal">&times;</span>
+          </div>
+          <div class="modal-body">
+            <p>
+              Player name: <span id="currentName"></span>
+              <button id="editNameBtn">Edit</button>
+            </p>
+            <div id="editNameBlock" style="display: none;">
+              <input type="text" id="newNameInput" placeholder="Enter new name">
+              <button id="saveNameBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="./fight.js"></script>
+    <script src="./settings.js"></script>
+    <script src="./character.js"></script>
 </body>
 </html>

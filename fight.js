@@ -5,5 +5,5 @@ document.getElementById("startBtn").addEventListener("click", () => {
       enemy: "Dark Lord"
     };
     localStorage.setItem("currentFight", JSON.stringify(fightData));
-    window.location.href = "fight.html";
+    window.location.href = "./battle.html";
   });

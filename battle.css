@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+  }
+
+  .navbar-left .logo {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .navbar-right a {
+    margin-left: 15px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .navbar-right a:hover {
+    color: #555;
+  }
+
+  .battlefield {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .character img {
+    width: 200px;
+  }
+
+  .health-bar {
+    background: #ccc;
+    width: 200px;
+    height: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .health-bar div {
+    height: 100%;
+    background: red;
+    width: 100%;
+    transition: width 0.3s;
+  }
+
+  .controls {
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  #log {
+    margin: 20px;
+    padding: 10px;
+    background: #fff;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
