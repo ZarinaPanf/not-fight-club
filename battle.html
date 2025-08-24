@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Battle</title>
+  <link rel="stylesheet" href="./battle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+        <h1>⚔️ Battle Arena</h1>
+    </div>
+    <div class="navbar-right">
+      <a href="./index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <a href="./character.html" title="Profile"><i class="fa-solid fa-user"></i></a>
+      <a href="#" title="Settings"><i class="fa-solid fa-gear" id="openSettingsBtn"></i></a>
+    </div>
+  </header>
+
+  <main class="battlefield">
+
+    <div class="character player">
+      <h2 id="player-name">Hero</h2>
+      <img src="./characters/mario.png" alt="Player">
+      <div class="health-bar">
+        <div id="player-hp"></div>
+      </div>
+      <p id="player-hp-text"></p>
+    </div>
+
+    <div class="controls">
+      <p>Выберите <b>1 зону для атаки</b> и <b>2 зоны для защиты</b>:</p>
+      <form id="battle-form">
+        <div class="zones">
+          <div>
+            <h3>Attack</h3>
+            <label><input type="radio" name="attack" value="Head"> Head</label><br>
+            <label><input type="radio" name="attack" value="Neck"> Neck</label><br>
+            <label><input type="radio" name="attack" value="Body"> Body</label><br>
+            <label><input type="radio" name="attack" value="Belly"> Belly</label><br>
+            <label><input type="radio" name="attack" value="Legs"> Legs</label>
+          </div>
+
+          <div>
+            <h3>Defence</h3>
+            <label><input type="checkbox" name="defence" value="Head"> Head</label><br>
+            <label><input type="checkbox" name="defence" value="Neck"> Neck</label><br>
+            <label><input type="checkbox" name="defence" value="Body"> Body</label><br>
+            <label><input type="checkbox" name="defence" value="Belly"> Belly</label><br>
+            <label><input type="checkbox" name="defence" value="Legs"> Legs</label>
+          </div>
+        </div>
+        <button type="submit">Attack!</button>
+      </form>
+    </div>
+
+    <div class="character enemy">
+      <h2 id="enemy-name"></h2>
+      <img id="enemy-img" src="./characters/boo.png" alt="Enemy">
+      <div class="health-bar">
+        <div id="enemy-hp"></div>
+      </div>
+      <p id="enemy-hp-text"></p>
+    </div>
+  </main>
+
+  <section id="log"></section>
+
+  <script src="./battle.js"></script>
+</body>
+</html>

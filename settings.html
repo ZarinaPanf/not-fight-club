@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./settings.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Settings</h2>
+            <span id="closeSettings" class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <p>
+              Player name: <span id="currentName"></span>
+              <button id="editNameBtn">Edit</button>
+            </p>
+            <div id="editNameBlock" style="display: none;">
+              <input type="text" id="newNameInput" placeholder="Enter new name">
+              <button id="saveNameBtn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="./settings.js"></script>
+</body>
+</html>

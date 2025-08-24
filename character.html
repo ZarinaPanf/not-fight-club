@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character</title>
+  <link rel="stylesheet" href="./character.css">
+  <link rel="stylesheet" href="./settings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="character-navbar">
+        <div class="navbar-left">
+          <span class="logo">Main</span>
+        </div>
+        <div class="navbar-right">
+          <a href="./index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+          <a href="#" title="Profile"><i class="fa-solid fa-user"></i></a>
+          <a href="#" title="Settings"><i class="fa-solid fa-gear" id="openSettingsBtn"></i></a>
+        </div>
+      </header>
+
+  <div class="character-container">
+    <div class="character-card">
+      <img id="avatar" src="./characters/mario.png" alt="Character Avatar">
+      <div class="character-info">
+        <h2 id="playerName">Unknown Hero</h2>
+        <p>Wins: <span id="wins" class="wins">0</span> |
+           Loses: <span id="loses" class="loses">0</span></p>
+        <button id="changeAvatarBtn">Change Avatar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="avatarModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3>Select Avatar</h3>
+      <div class="avatar-list">
+        <img src="./characters/boo.png" class="avatar-option" alt="avatar1">
+        <img src="./characters/bowser-jr.png" class="avatar-option" alt="avatar2">
+        <img src="./characters/bowser.png" class="avatar-option" alt="avatar3">
+        <img src="./characters/donkey-kong.png" class="avatar-option" alt="avatar4">
+        <img src="./characters/toad.png" class="avatar-option" alt="avatar5">
+        <img src="./characters/waluigi.png" class="avatar-option" alt="avatar6">
+      </div>
+    </div>
+  </div>
+
+  <div id="settingsModal" class="modal">
+    <div class="settings-modal-content">
+      <div class="modal-header">
+        <h2>Settings</h2>
+        <span id="closeSettings" class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          Player name: <span id="currentName"></span>
+          <button id="editNameBtn">Edit</button>
+        </p>
+        <div id="editNameBlock" style="display: none;">
+          <input type="text" id="newNameInput" placeholder="Enter new name">
+          <button id="saveNameBtn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./character.js"></script>
+  <script src="./settings.js"></script>
+</body>
+</html>
